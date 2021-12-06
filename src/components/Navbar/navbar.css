@@ -1,0 +1,143 @@
+.space__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* margin: 1rem 0; */
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.space__navbar-logo {
+  padding-left: 6rem;
+}
+
+.space__navbar-logo img {
+  width: 48px;
+  height: 48px;
+}
+
+.space__navbar-container {
+  background: rgba(250, 250, 250, 0.04);
+  backdrop-filter: blur(10px);
+  padding: 2rem 6rem;
+  width: 830px;
+  height: 96px;
+}
+
+.space__navbar-container_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.space__navbar-container_links-link {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #fff;
+  margin: 0 2rem;
+  font-family: var(--font-family2);
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.space__navbar-container_links-link:hover::before {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+}
+
+.space__navbar-container_links-link span {
+  font-weight: 800;
+}
+
+.space__navbar-menu {
+  display: none;
+  padding-right: 1rem;
+}
+
+.space__navbar-menu svg {
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.space__navbar-menu_container-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 121px;
+  padding: 6rem 2rem;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.space__navbar-menu_container-links li {
+  margin: 1rem 0;
+}
+
+.space__navbar-menu_container-links .space__navbar-container_links-link {
+  text-align: left;
+}
+
+.space__navbar-menu_container-links .space__navbar-container_links-link span {
+  display: inline;
+}
+
+@media screen and (max-width: 1050px) {
+  .space__navbar {
+    padding: 0;
+  }
+
+  .space__navbar-logo {
+    padding: 2rem 0 2rem 2rem;
+  }
+
+  .space__navbar-container {
+    padding: 2rem 6rem;
+    width: 450px;
+    height: 96px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .space__navbar-container_links-link {
+    margin: 0 1rem;
+  }
+
+  .space__navbar-container_links-link span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .space__navbar-container {
+    display: none;
+  }
+
+  .space__navbar-menu {
+    display: flex;
+  }
+
+  .space__navbar-container_links-link:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+  }
+}

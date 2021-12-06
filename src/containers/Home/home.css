@@ -1,0 +1,175 @@
+.space__home {
+  background: url(../../assets/home/background-home-desktop.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.space__home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.space__home-container_contentA {
+  justify-content: center;
+  align-items: center;
+}
+
+.space__home-container_contentA h5 {
+  font-family: var(--font-family2);
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  color: var(--color-heading);
+  text-transform: uppercase;
+}
+
+.space__home-container_contentA h1 {
+  font-size: 150px;
+  line-height: 150px;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+.space__home-container_contentA p {
+  width: 380px;
+  font-size: 18px;
+  font-family: var(--font-family2);
+  color: var(--color-heading);
+  line-height: 32px;
+}
+
+.space__home-container_contentB {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space__home-container_contentB-btn button {
+  border: none;
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  font-weight: 400;
+  font-family: var(--font-family);
+  font-size: 32px;
+  line-height: 36.67px;
+  letter-spacing: 2px;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.space__home-container_contentB-btn button:hover {
+  box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.1);
+  transition: 0.3s all ease-in-out;
+}
+
+@media screen and (max-width: 1050px) {
+  .space__home {
+    background: url(../../assets/home/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .space__home-container {
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .space__home-container_contentA {
+    padding: 7rem 0 2rem 0;
+  }
+
+  .space__home-container_contentA h5 {
+    font-size: 20px;
+  }
+
+  .space__home-container_contentA h1 {
+    font-size: 100px;
+  }
+
+  .space__home-container_contentB-btn button {
+    width: 220px;
+    height: 220px;
+    font-size: 24px;
+    line-height: 36.67px;
+    letter-spacing: 2px;
+  }
+
+  .space__home-container_contentA p {
+    width: 444px;
+    margin-left: 1rem;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .space__home-container_contentB-btn button:hover {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1);
+    transition: 0.3s all ease-in-out;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .space__home {
+    background: url(../../assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  .space__home-container {
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .space__home-container_contentB-btn button {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    line-height: 22.92px;
+    letter-spacing: 1.25px;
+  }
+
+  .space__home-container_contentA p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .space__home-container_contentA h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .space__home-container_contentA h5 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .space__home-container_contentA p {
+    width: 300px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
